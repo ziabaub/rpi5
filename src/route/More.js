@@ -5,7 +5,7 @@ class More extends Component {
         return (
 
             <div>
-                kjhkhl
+                more
             </div>
         );
     }

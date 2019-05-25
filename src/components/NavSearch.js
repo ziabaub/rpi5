@@ -1,21 +1,21 @@
 import React, {Component} from 'react';
 import {NavLink} from "react-router-dom";
+
 const  NavBarButton =({to,label,id}) => (
     <NavLink to={to} activeClassName={'active'} className={'nav-link'}><input type="submit" id={id} className="btn col m2 s12" value={label}/></NavLink>
-
-)
+);
 
 class NavSearch extends Component {
+
     render() {
         return (
 
             <div className="container">
-                <h3 className="center" style={{marginBottom: +'20px'}}>Occ search Engine <i
-                    className="material-icons medium hide-on-small-only" id="icons"/></h3>
-
+                <h3 className="center" style={{marginBottom: +'20px'}}>Occ search Engine <i className="material-icons medium hide-on-small-only" id="icons"/>
+                </h3>
                 <form>
                     <div className="input-field">
-                        <i className="material-icons prefix">public</i>
+                        <i className="material-icons-prefix">public</i>
                         <input type="text" id="searchquery"/>
                         <label>Find whats happening in the US......</label>
                     </div>
@@ -37,7 +37,6 @@ class NavSearch extends Component {
                     <br/><br/>
                     <NavBarButton to={'/more'} id={'getMore'} label={'More'}/>
                 </div>
-
             </div>
         );
     }

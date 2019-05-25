@@ -5,7 +5,7 @@ class Search extends Component {
         return (
 
             <div>
-
+                search
             </div>
         );
     }
