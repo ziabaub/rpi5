@@ -30,22 +30,6 @@ class newsapi extends Component {
                 getData(url);
             });
 
-            $("#searchBtn").on("click", function (e) {
-                e.preventDefault();// try do not show the user that we reload the page
-                count = 0;
-                let query = $("#searchquery").val(); // get info from input text field
-                url = "https://newsapi.org/v2/top-headlines?q=" + value + "&country=us&category=business&apiKey=261f191c064f425baafde212648635d8";
-                //console.log(url);
-                if (query !== "") {
-                    getData(url);
-                } else {
-                    window.Materialize.toast({ // framework
-                        html: "input can't be empty",
-                        classes: 'red'
-                    });
-                }
-            });
-
         });
 
 
